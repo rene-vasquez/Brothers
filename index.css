@@ -1,5 +1,5 @@
 #nav {
-    height: 60px;
+    height: 70px;
     background-color: black;
     display: flex;
     justify-content: space-around;
@@ -14,6 +14,13 @@
     font-size: 140%;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+#slogan {
+    width: 75%;
+    padding-top: 10px;
+    border-top: 0.5px solid white;
+    border-bottom: 0.5px solid white;
 }
 
 .navbar {
@@ -63,11 +70,21 @@
     opacity: 0.5;
 }
 
-footer {
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: black;
-
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: smaller;
 }
 
+.footer-card {
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
 /* Link styling*/
 
 a:link {
@@ -89,7 +106,7 @@ a:link {
 
   /* Media Queries*/
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     .card-info {
         display: flex;
         flex-direction: column;
@@ -100,8 +117,11 @@ a:link {
     }
     
     #nav {
-        height: 150px;
+        height: 70px;
         display: flex;
         flex-direction: column;
+    }
+    .link-light {
+        display: none !important;
     }
   }
