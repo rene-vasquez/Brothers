@@ -1,0 +1,35 @@
+.slogan {
+    background-color: black;
+    color: white;
+    font-size: 140%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar {
+    background-color: black !important;
+}
+
+#cards {
+    background-color: black;
+}
+
+#cards h3{
+    color: white !important;
+    width: 100%;
+}
+
+#cards p{
+    color: white !important;
+}
+
+.card-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 33.3%;
+}
+
+.card-info img {
+    width: 100%;
+}
