@@ -14,6 +14,8 @@
     border-radius: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    height: 450px;
+    width: 300px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -42,7 +44,7 @@
     }
 
     .about-section {
-        width: 100%;
+        width: 300px;
         margin-left: 10%;
         margin-right: 10%;
     }
