@@ -77,13 +77,25 @@
     color: white;
     display: flex;
     flex-wrap: wrap;
-    font-size: smaller;
+}
+
+#lets-talk {
+    font-size:small;
 }
 
 .footer-card {
     width: 50%;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.legal {
+    background-color: black;
+    color: gray;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: small;
 }
 /* Link styling*/
 
