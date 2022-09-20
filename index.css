@@ -1,3 +1,13 @@
+#nav {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
 .slogan {
     background-color: black;
     color: white;
@@ -12,11 +22,27 @@
 
 #cards {
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#cards h3{
+.card-text {
     color: white !important;
-    width: 100%;
+    width: 75%;
+    height: min-content;
+    position: absolute;
+    top: 10pc;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.card-text h3 {
+    font-size: 150%;
+}
+
+.card-text h3:hover {
+    font-size:200%;
 }
 
 #cards p{
@@ -28,8 +54,54 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 33.3%;
+    position: relative;
+    text-align: center;
 }
 
 .card-info img {
     width: 100%;
+    opacity: 0.5;
 }
+
+footer {
+    background-color: black;
+
+}
+
+/* Link styling*/
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+
+  /* Media Queries*/
+
+  @media only screen and (max-width: 600px) {
+    .card-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+    
+    #nav {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+  }
