@@ -3,7 +3,7 @@ body{
 }
 
 #nav-large {
-    height: 70px;
+    height: 60px;
     background-color: black;
     display: flex;
     justify-content: space-around;
@@ -120,6 +120,10 @@ body{
 
 #lets-talk {
     font-size:small;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-right: 0.5px solid white;
 }
 
 .footer-card {
@@ -167,7 +171,7 @@ a:active {
 
 @media only screen and (max-width: 1500px) {
     .bubble-text{
-        font-size:80%;
+        font-size:90%;
     }
 }
 
@@ -229,13 +233,20 @@ a:active {
         font-size: 80%;
     }
     .bubble-text{
-        font-size:200%;
+        font-size:180%;
     }
     .bubble-text p{
         display: none;
     }
     .slogan img {
         width: 66.66%;
+    }
+    #lets-talk {
+        border-right: 0px solid white;
+    }
+    #lets-talk p {
+        padding-bottom: 3%;
+        border-bottom: 0.5px solid white;
     }
 }
 
@@ -244,6 +255,6 @@ a:active {
         width: 100%;
     }
     .bubble-text{
-        font-size:100%;
+        font-size:125%;
     }
 }

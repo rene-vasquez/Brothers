@@ -18,7 +18,7 @@
     width: 300px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
     .bios {
         display: flex;
         flex-wrap: wrap;
@@ -47,5 +47,11 @@
         width: 300px;
         margin-left: 10%;
         margin-right: 10%;
+    }
+
+    .slogan img {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
