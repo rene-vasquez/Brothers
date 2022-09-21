@@ -47,25 +47,31 @@ body{
 
 .card-text {
     color: white ;
-    width: 75%;
-    height:200px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 10px;
-    padding-top: 15%;
-    padding-bottom: 30%;
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.card-text h3 {
+.bubble-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text h3, p {
     font-size: 150%;
 }
 
-.card-text h3:hover {
-    font-size:200%;
+.card-text:hover {
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.6);
 }
 
 #cards p{
@@ -83,7 +89,11 @@ body{
 
 .card-info img {
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.8;
+}
+
+#dark-pic {
+    opacity: 0.9;
 }
 
 .footer {
@@ -138,7 +148,7 @@ body{
 
 /* Media Queries*/
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
     .card-info {
         display: flex;
         flex-direction: column;
@@ -147,11 +157,9 @@ body{
         position: relative;
         text-align: center;
     }
-    
     #nav-large {
         display: none;
     }
-    
     #nav-small{
         height: 70px;
         display: flex;
@@ -184,5 +192,26 @@ body{
     }
     .slogan {
         font-size: 80%;
+    }
+    .bubble-text{
+        font-size:200%;
+    }
+    .bubble-text p{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .bubble-text{
+        font-size:80%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .bubble-text{
+        font-size:80%;
+    }
+    .bubble-text p{
+        display: none;
     }
 }
