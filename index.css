@@ -1,10 +1,14 @@
+:root {
+    --black: rgb(20, 20, 20);
+  }
+
 body{
-    background-color: black;
+    background-color: rgb(20, 20, 20);
 }
 
 #nav-large {
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.666);
+    background-color: rgba(20, 20, 20, 0.666);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -13,7 +17,7 @@ body{
 
 #nav-small{
     height: 70px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(20, 20, 20, 0.75);
     display: none;
     justify-content: space-around;
     align-items: center;
@@ -99,8 +103,6 @@ body{
 .card-info img {
     width: 100%;
     opacity: 0.8;
-    border: 5px solid black;
-    border-radius: 20px;
 }
 
 #dark-pic {
