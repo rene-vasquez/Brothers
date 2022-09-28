@@ -41,17 +41,34 @@
     text-align: center;
 }
 
-.statements {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.statements img{
-    display: none;
+.center-mission img{
+    max-width: 100%;
+    height: auto;
 }
 
 .center-mission{
-    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.pic-text{
+    color: white ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .statement {
