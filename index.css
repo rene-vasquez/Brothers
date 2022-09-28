@@ -1,14 +1,14 @@
 :root {
-    --black: rgb(20, 20, 20);
+    --black: rgb(0, 0, 0);
   }
 
 body{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(0, 0, 0);
 }
 
 #nav-large {
     height: 60px;
-    background-color: rgba(20, 20, 20, 0.666);
+    background-color: rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -17,7 +17,7 @@ body{
 
 #nav-small{
     height: 70px;
-    background-color: rgba(20, 20, 20, 0.75);
+    background-color: rgba(0, 0, 0, 0.75);
     display: none;
     justify-content: space-around;
     align-items: center;
@@ -76,6 +76,7 @@ body{
 
 .bubble-text {
     display: flex;
+    
     flex-direction: column;
 }
 
@@ -110,7 +111,9 @@ body{
 }
 
 .footer {
-    padding-top: 40px;
+    margin-top: 30px;
+    border-top: 0.5px solid rgba(122, 122, 122, 0.75);
+    padding-top: 30px;
     padding-bottom: 40px;
     background-color: black;
     color: white;
@@ -247,6 +250,8 @@ a:active {
     #lets-talk p {
         padding-bottom: 3%;
         border-bottom: 0.5px solid white;
+        padding-top: 3%;
+        border-top: 0.5px solid white;
     }
 }
 

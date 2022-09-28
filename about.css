@@ -1,6 +1,8 @@
 .bios {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    width: 95%;
 }
 
 .bio {
@@ -8,20 +10,25 @@
     flex-wrap: wrap;
     justify-content: center;
     color: white;
-    width: 45%;
+    width: 49%;
+    padding-bottom: 20px;
+}
+
+#rascal {
+    width: 100%;
 }
 
 .bio img {
-    border-radius: 10px;
     height: 495px;
     width: 330px;
+    padding-bottom: 10px;
 }
 
 .profile-img{
     width: 40%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .about-section{
@@ -30,6 +37,33 @@
     margin-right: 5%;
 }
 
+#center{
+    text-align: center;
+}
+
+.statements {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.statements img{
+    display: none;
+}
+
+.center-mission{
+    color: white;
+}
+
+.statement {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.statement-header {
+    display: flex;
+    justify-content: center;
+}
 
 @media only screen and (max-width: 1500px) {
     .bios {
@@ -47,6 +81,9 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .bio-text {
+        font-size: small;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -58,7 +95,8 @@
     }
     
     .bio img {
-        width: 150px;
+        width: 280px;
+        height: 420px;
     }
 
     .about-section {
@@ -68,8 +106,17 @@
     }
 
     .slogan-img img {
-        width: 150px;
+        width: 270px;
         margin-left: auto;
         margin-right: auto;
+    }
+    #rascal-pic{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bio-text {
+    text-align: center;
     }
 }
