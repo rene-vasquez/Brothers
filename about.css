@@ -1,3 +1,8 @@
+#slogan {
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
 .bios {
     display: flex;
     flex-wrap: wrap;
@@ -47,39 +52,45 @@
 }
 
 .center-mission{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    background-image: url('./assets/20220924_192341-2.jpg');
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    position: relative;
+    height: 1400px;
     text-align: center;
+    display: flex;
+    align-content:space-around;
 }
 
 .pic-text{
-    color: white ;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.75);
-    width: fit-content;
-    height: fit-content;
+    color: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    font-size: small;
 }
 
 .statement {
+    min-width: 500px;
+    width: 30%;
     color: white;
-    margin-left: 10%;
-    margin-right: 10%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .statement-header {
     display: flex;
     justify-content: center;
+    margin: 10px 0px 10px 0px;
+    border-bottom: 1px solid white;
+}
+
+.statement-text {
+    width: 80%;
 }
 
 @media only screen and (max-width: 1500px) {
